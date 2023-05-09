@@ -34,8 +34,18 @@ ul {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 32px;
+    gap: 25%
+}
+
+.left-container {
+    width: 50%;
+}
+
+.right-container img {
+    display: flex;
+    justify-content: center;
 }
 
 .hero {
@@ -46,6 +56,7 @@ ul {
 
 .hero-secondary {
     font-size: 18px;
+    padding: 18px 0px 18px;
 }
 
 button {
@@ -61,6 +72,7 @@ img {
     height: auto;
 }
 
+
 button.sign-up-button {
     background-color: #3882F6;
 }
@@ -71,6 +83,9 @@ button.sign-up-button {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .card-title {
@@ -79,9 +94,37 @@ button.sign-up-button {
     color:#1F2937
 }
 
+.cat-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 32px 64px;
+    flex-wrap: wrap;
+}
+
 .card {
     display: flex;
     flex-direction: column;
+    max-width: 300px;
+    max-height: 300px;
+    padding: 32px;
+}
+
+
+.cat-container img {
+    border-radius: 8px;
+    border: 5px solid #3882F6;
+    object-fit: cover;    
+}
+
+.cat-card {
+    display: flex;
+    width: 300px;
+    height: 300px;
+}
+
+.text {
+    padding-top: 32px;
 }
 
 .quote-container {
